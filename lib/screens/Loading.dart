@@ -16,7 +16,7 @@ class _LoadingState extends State<Loading> {
 
    await instance.getTime();
    print(instance.time);
-   setState(() {
+   setState (() {
      Navigator.pushReplacementNamed(context, '/home' ,arguments: {
        'location' : instance.location,
        'time' : instance.time,
